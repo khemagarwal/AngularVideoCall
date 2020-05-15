@@ -164,12 +164,14 @@ window.addEventListener('load', ()=>{
                     let newVid = document.createElement('video');
                     newVid.id = `${partnerName}-video`;            
                     newVid.srcObject = str;
+                    newVid.style="border: 2px solid black; height:700px;width:1100px"
                     newVid.autoplay = true;
                     newVid.className = 'remote-video';
                     
                     //create a new div for card
                     let cardDiv = document.createElement('div');
                     cardDiv.className = 'card mb-3';
+                    cardDiv.style="border: 2px solid black; height:700px;width:1100px";
                     cardDiv.appendChild(newVid);
                     
                     //create a new div for everything
